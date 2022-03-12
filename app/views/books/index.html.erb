@@ -4,9 +4,11 @@
 
 <table>
   <thead>
-    <th>Title</th>
-    <th>Body</th>
-    <th></th>
+    <tr>
+      <th>Title</th>
+      <th>Body</th>
+      <th calspan ="3"></th>
+    </tr>
   </thead>
 
   <tbody>
@@ -14,7 +16,15 @@
     <tr>
       <td><%= book.title %></td>
       <td><%= book.body %></td>
-      <td></td>
+      <td>
+        <a href="books/:id">Show</a>
+      </td>
+      <td>
+        <a href="books/:id/edit">Edit</a>
+      </td>
+      <td>
+        <%= link_to "Destroy", destroy_book_path(@book.id), method: :delete, "data-confirm" => "Are you sure?"  %>
+      </td>
     </tr>
 　　<% end%>
   </tbody>
