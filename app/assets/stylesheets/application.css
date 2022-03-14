@@ -79,18 +79,53 @@ h2 {
   margin-bottom :0.83em;
 }
 
+#error_explanation {
+  width :450px;
+  background-color :#f0f0f0;
+  border :2px solid red;
+  margin-bottom :20px;
+  padding :7px;
+  padding-bottom :0;
+}
+
+#error_explanation h2 {
+  padding :5px 5px 5px 15px;
+  font-size :12px;
+  background-color :#c00;
+  color :#fff;
+  margin :-7px;
+}
+
+ul {
+  margin : 33px;
+  line-height: 18px;
+}
+
+li {
+  font-size:12px;
+  list-style :square;
+}
+
 .form {
   display: block;
 }
 
-.field {
+.field :valid {
   display: block;
+  margin-bottom :10px;
+}
+
+.field :invalid {
+  background-color :red;
+  display:table;
+  padding :2px;
   margin-bottom :10px;
 }
 
 .action {
   margin-bottom :10px;
 }
+
 
 label {
   display: block;
