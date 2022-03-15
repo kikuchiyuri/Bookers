@@ -14,12 +14,6 @@
  *= require_self
  */
 
-* {
-  margin :0;
-  padding :0;
-  box-sizing :border-box;
-}
-
 body {
   display: block;
   background-color :#fff;
@@ -74,10 +68,6 @@ td {
   padding-bottom :7px;
 }
 
-h2 {
-  margin-top :0.83em;
-  margin-bottom :0.83em;
-}
 
 #error_explanation {
   width :450px;
@@ -110,7 +100,7 @@ li {
   display: block;
 }
 
-.field :valid {
+.field  {
   display: block;
   margin-bottom :10px;
 }
